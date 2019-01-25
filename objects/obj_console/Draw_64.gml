@@ -1,11 +1,10 @@
+/// @description Insert description here
 // You can write your code in this editor
 /*
 draw_text(display_mouse_get_x(),display_mouse_get_y(),"x: "+string(display_mouse_get_x()) + " y: "+string(display_mouse_get_y()));
 draw_text(display_mouse_get_x(),display_mouse_get_y()+40,string(display_get_gui_height()));
 */
 //================ commandline bar =================
-draw_set_halign(fa_left)
-draw_set_valign(fa_top)
 
 //black_backdrop
 draw_set_color(c_black);
