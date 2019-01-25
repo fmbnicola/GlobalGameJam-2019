@@ -1,19 +1,15 @@
-/// @description Insert description here
-// You can write your code in this editor
-
 /*
 ___________________________| ADD A NEW COMMAND! |__________________________________________
 
   -> edit scr_console_commands() and add new command to both arrays	           
   -> edit scr_console_execute_command()'s switch statement to add the new comands behaviour
+  
   -> edit scr_console_macros() to add or remove a macro!
 ___________________________________________________________________________________________
 */
 
 image_xscale = 1/2.5;
 image_yscale = 1/2.5;
-
-display_set_gui_size(1920,1080);
 
 display_w = display_get_gui_width();
 display_h = display_get_gui_height();
@@ -23,7 +19,7 @@ text_padding = 30;
 
 console_w     = 700;
 console_h     = 40;
-console_text  = "=================| SomethingFell Console V 1.1 |=================\n"
+console_text  = "=================| SomethingFell Console V 0.5 |=================\n"
 console_text += " (Esc -> exit console ) (Tab -> autocomplete) (Enter -> Execute)\n";
 console_text += " (LCtrl + Key -> macro): type 'list_macros()' for help          \n";
 console_max_h = 800;
@@ -37,6 +33,7 @@ scroll_max_offset = 0;
 
 scr_console_commands();
 
+db_overlay = false;
 																	
 //================ commandline bar =====================================
 cmdline_left   = display_w - console_w;

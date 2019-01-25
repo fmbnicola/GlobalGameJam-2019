@@ -1,5 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
 mousex = device_mouse_x_to_gui(0);
 mousey = device_mouse_y_to_gui(0);
 
@@ -16,20 +14,10 @@ if(scroll_max_offset <= 0){
 	scroll_max_offset = 0;
 } 
 
-//if click on commandline or keyboard equivelent
-if(point_in_rectangle(mousex, mousey, cmdline_left, cmdline_top, cmdline_right, cmdline_bottom)){
-	if(mouse_check_button_pressed(mb_left)){
-		if(selected == false){
-			selected        = true;
-			global.pause    = true;
-			keyboard_string = "";
-		}
-	}
-}
-else if(keyboard_check(vk_enter)){
+//if open commandline
+if(keyboard_check_pressed(vk_home)){
 	if(selected == false){
 		selected        = true;
-		global.pause    = true;
 		keyboard_string = "";
 		show_log = true;
 		exit;
@@ -49,16 +37,15 @@ if(point_in_rectangle(mousex, mousey, logbtn_left, logbtn_top, logbtn_right, log
 		
 		if(selected == false){
 			selected        = true;
-			global.pause    = true;
 			keyboard_string = "";
 		}
 	}
 }
 
-//If pressed esc
-if(keyboard_check(vk_escape)){
+
+//If exit terminal
+if(keyboard_check_pressed(vk_end)){
 	selected     = false;
-	global.pause = false;
 	cmdline_text = "";
 	show_log     = false;
 }

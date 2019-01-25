@@ -48,7 +48,6 @@ if(nearest_things!=noone){
 
 ds_list_destroy(nearest_things);
 
-
 //update hovered and selected
 if(mouse_check_button_pressed(mb_left)){
 	selected = chosen;
@@ -58,7 +57,6 @@ if(mouse_check_button_released(mb_left)){
 }
 
 if(selected == noone){
-	
 	if(hovered != noone){
 		hovered.hover = false;
 	}
@@ -67,5 +65,8 @@ if(selected == noone){
 		hovered.hover = true;
 	}
 }
+
+gui_x = device_mouse_x_to_gui(0);
+gui_y = device_mouse_y_to_gui(0);
  
 //show_debug_message("H-> " + string(hovered) + "    S-> " + string(selected))
