@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 //zoom in and out
-if(mouse_check_button(mb_right)){
+/*if(mouse_check_button(mb_right)){
 	
 	if(follow != "pan_mode"){
 		follow = "pan_mode";
@@ -37,4 +37,4 @@ if(keyboard_check(ord("J"))){
 if(keyboard_check(ord("K"))){
 	cam_angle += 2;
 }
-
+*/
