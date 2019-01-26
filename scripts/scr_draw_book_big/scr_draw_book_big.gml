@@ -17,5 +17,29 @@ draw_self();
 
 shader_reset();
 
-draw_sprite(spr_book_covers,0,x+sprite_width,y);
+if(info != -1){
+	switch(image_index){
+		case 0:
+			draw_sprite(spr_book_covers,book_id,x+sprite_width/2,y+60);
+	
+			draw_set_font(fnt_read);
+			draw_set_valign(fa_middle);
+			draw_set_halign(fa_center);
+			draw_text_ext(x+sprite_width/2,y+(sprite_height-135)/5,info[0],24,150);
+			draw_set_halign(fa_left);
+			draw_set_valign(fa_top);
+			draw_set_font(fnt_console);
+		break;
+	
+		case 1:
+			draw_set_font(fnt_read);
+			draw_set_valign(fa_middle);
+			draw_set_halign(fa_center);
+			draw_text_ext(x+sprite_width/2,y+(sprite_height-135)/2,info[2],24,200);
+			draw_set_halign(fa_left);
+			draw_set_valign(fa_top);
+			draw_set_font(fnt_console);
+		break;
+	}
+}
 }
