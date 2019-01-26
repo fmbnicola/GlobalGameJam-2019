@@ -8,3 +8,7 @@ grabbed = false;
 joint = -1;
 
 phy_fixed_rotation = true;
+
+book_id = -1;
+
+info = -1;

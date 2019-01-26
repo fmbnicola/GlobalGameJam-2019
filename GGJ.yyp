@@ -1159,6 +1159,14 @@
             }
         },
         {
+            "Key": "be5300f7-9f52-456a-b0f9-fbbae99ab8f5",
+            "Value": {
+                "id": "a215fe00-9b38-4af2-aebf-f7ddf19bbe8a",
+                "resourcePath": "scripts\\ds_grid_get_line\\ds_grid_get_line.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c19ecb7b-9ff0-45b5-85e7-a2260dfa57f7",
             "Value": {
                 "id": "725ad803-3d53-47fb-88e3-abec3c252c4a",
@@ -1663,6 +1671,7 @@
         "38a460d6-826a-4d9a-821d-1d26e765d49e",
         "c345985a-82a6-40c3-86cb-b28908c589d0",
         "6f628f6f-7a6e-4a17-97fc-d9eba30e8cf4",
+        "be5300f7-9f52-456a-b0f9-fbbae99ab8f5",
         "0d0f172f-e723-4d6e-a3bd-71d513dd2b22",
         "8cae8eed-7c56-4278-9a7b-c11d409df341"
     ],
