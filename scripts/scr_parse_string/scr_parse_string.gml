@@ -13,7 +13,7 @@ var c = string_char_at(str,i);
 
 var v = ord(string_upper(c));
 
-if(v == 45){
+if(v == 45 or v == 34){
 	c = string_char_at(str,2);
 	v = ord(c);
 }

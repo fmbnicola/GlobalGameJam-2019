@@ -167,6 +167,14 @@
             }
         },
         {
+            "Key": "147ba0b1-766c-40e6-96ab-d7a115b43fd5",
+            "Value": {
+                "id": "006e863a-4478-46e8-a18f-8ab07a9c9b54",
+                "resourcePath": "datafiles_yy\\books.csv.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "159eb87f-fbfd-4410-a948-7fc944b2b9a2",
             "Value": {
                 "id": "2eac2acf-4964-49ce-90fb-80277da544f4",
@@ -476,6 +484,14 @@
                 "id": "81b5eaac-5131-459f-90cb-bd29e9992a5e",
                 "resourcePath": "objects\\obj_draw_parent\\obj_draw_parent.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "51f16483-53d2-4bd1-8519-3b0bac3f9241",
+            "Value": {
+                "id": "d33edb63-01de-4146-abec-78b6fcef1f84",
+                "resourcePath": "datafiles_yy\\chars.csv.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -1436,6 +1452,14 @@
                 "id": "94e0c72d-7145-40ed-b998-4030d35f4195",
                 "resourcePath": "scripts\\input_check_released\\input_check_released.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "fcdd978f-641a-4fc1-b03b-f62a8c31accd",
+            "Value": {
+                "id": "08a725a7-8afa-4cb1-9715-90ab84698ffa",
+                "resourcePath": "objects\\obj_character\\obj_character.yy",
+                "resourceType": "GMObject"
             }
         },
         {
