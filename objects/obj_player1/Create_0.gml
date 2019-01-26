@@ -27,11 +27,14 @@ wiggle_speed         = 0;
 //head
 head_y = y - (200*image_yscale);
 head_x = x;
-head_follow_speed = 5;
 
 //face
 face_y = y - (200*image_yscale);
 face_x = x;
 face_sprite = 0; //(0 -> normal, 1 -> normal_blinking, 2 -> carrying something, 3 -> hidden);
+face_off = 0;
+face_off_target = 0;
+
+//arms 
 
 
