@@ -5,6 +5,8 @@ image_yscale = 1;
 
 grabbed = false;
 
+draw_script = scr_draw_book_big;
+
 joint = -1;
 
 phy_fixed_rotation = true;

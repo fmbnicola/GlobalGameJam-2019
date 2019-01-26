@@ -1,3 +1,5 @@
 /// @description blink
 alarm_set(1,room_speed*0.2);
-face_sprite = 1;
+if(!using_ladder){
+	face_sprite = 1;
+}

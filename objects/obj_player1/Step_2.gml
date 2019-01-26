@@ -4,9 +4,13 @@
 wiggle_speed = scr_approach(wiggle_speed,abs(xaxis)*wiggle_speed_target,2);
 
 //body
+using_ladder = false;
+
 if(on_ladder and vspd != 0){
+	wiggle_speed = scr_approach(wiggle_speed,abs(yaxis)*wiggle_speed_target,2);
 	rotation = sin(rot_t) * wiggle_ammount;
 	rot_t += 0.1*wiggle_speed;
+	using_ladder = true;
 }
 else if(abs(xaxis) == 0 or phy_speed_y != 0){
 	rotation = scr_approach(rotation,0,wiggle_ammount);

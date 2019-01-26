@@ -16,7 +16,19 @@ image_index  = 0;
 image_xscale = 0.25;
 image_yscale = 0.25;
 
-on_ladder = false;
+on_ladder    = false;
+using_ladder = false;
+
+can_jump           = true;
+jump_start         = true;
+jump_cooldown_time = 0.2;
+jump_hold_time     = 0.5;
+
+//book
+book_selected = noone;
+book          = noone;
+book_joint[0]    = noone;
+book_joint[1]    = noone;
 
 //body
 rotation             = 0;
@@ -53,5 +65,5 @@ arm2_rot = arm2_rot_target;
 hand_target_resting = -120;
 hand_target = [0,0];
 
-arm_state = "aiming";
+arm_state = "resting";
 
