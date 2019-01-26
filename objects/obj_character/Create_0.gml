@@ -36,7 +36,7 @@ for(var i = 0; i < 5; i++){
 			break;
 		
 			case 1:
-				message += "I am " + info[i] + choose("years old.\n", ".\n");
+				message += "I am " + string(info[i]) + choose(" years old.\n", ".\n");
 			break;
 		
 			case 2:
@@ -45,7 +45,7 @@ for(var i = 0; i < 5; i++){
 			break;
 		
 			case 4:
-				message += choose("I'm a ", "I am a", "Consider me a ");
+				message += choose("I'm a ", "I am a ", "Consider me a ") + info[i] + ".\n";
 			break;
 		}
 	}
