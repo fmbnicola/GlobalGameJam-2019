@@ -21,3 +21,5 @@ physics_fixture_set_friction(book_fix,0.5);
 physics_fixture_set_collision_group(book_fix,1);
 
 my_fix = physics_fixture_bind(book_fix,id);
+
+physics_fixture_delete(book_fix);

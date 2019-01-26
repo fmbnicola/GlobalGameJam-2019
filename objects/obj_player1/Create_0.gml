@@ -22,7 +22,7 @@ using_ladder = false;
 can_jump           = true;
 jump_start         = true;
 jump_cooldown_time = 0.2;
-jump_hold_time     = 0.5;
+jump_hold_time     = 0.3;
 
 //book
 book_selected = noone;

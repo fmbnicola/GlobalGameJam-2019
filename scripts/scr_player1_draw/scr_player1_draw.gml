@@ -49,4 +49,4 @@ else{ //draws player facing forwards
 
 }
 
-physics_draw_debug();
+//physics_draw_debug();

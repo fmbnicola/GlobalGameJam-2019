@@ -10,7 +10,7 @@ switch(arm_state){
 		//choose a book to select
 		var closest_book = instance_nearest(x,y,obj_small_book);
 		
-		if(closest_book != noone and distance_to_object(closest_book) < 30){
+		if(closest_book != noone and distance_to_object(closest_book) < 40){
 			
 			if(book_selected != noone){
 				book_selected.highlight = false;
@@ -30,6 +30,11 @@ switch(arm_state){
 		//if a book is selected and grab is pressed pick book up
 		if(input_check_pressed(0,E_INPUT_SLOT.GRAB) and book_selected != noone){
 			book = book_selected;
+			
+			if(book.state == "back"){
+				book.state = "go_to_side";
+			}
+			
 			book_joint[0] = physics_joint_distance_create(id,book,x,y,book.x,book.y,false);
 			book_joint[1] = physics_joint_distance_create(id,book,x,y,book.x,book.y,false);
 			arm_state = "pickupbook";
@@ -45,8 +50,19 @@ switch(arm_state){
 		arm1_rot = arm1_rot_target;
 		arm2_rot = arm2_rot_target;
 		
+		var pivot = instance_nearest(x,y,obj_pivot);
+		
+		//if let go of grab on ledge, store book
+		if(input_check_released(0,E_INPUT_SLOT.GRAB) and book != noone and place_meeting(book.x,book.y,obj_bookcase) and pivot.free = true){
+			book.state = "go_to_back";
+			arm_state = "resting";
+			physics_joint_delete(book_joint[0]);
+			physics_joint_delete(book_joint[1]);
+			book = noone;
+		}
+		
 		//if grab is released let go of book
-		if((input_check_released(0,E_INPUT_SLOT.GRAB) or distance_to_object(book) > 30) and book != noone){
+		else if((input_check_released(0,E_INPUT_SLOT.GRAB) or distance_to_object(book) > 45) and book != noone){
 			book = noone;
 			physics_joint_delete(book_joint[0]);
 			physics_joint_delete(book_joint[1]);

@@ -615,6 +615,14 @@
             }
         },
         {
+            "Key": "60fbe1e6-f134-4a4f-a8f8-d025df57160f",
+            "Value": {
+                "id": "2fbb5dde-de97-428f-85b8-99060eb847d8",
+                "resourcePath": "objects\\obj_book_shelf\\obj_book_shelf.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "628112dc-b08d-4fe7-902e-f1f1efe46eb5",
             "Value": {
                 "id": "343bb990-7e5e-4695-90bc-0853b9e740a3",
@@ -796,6 +804,14 @@
                 "id": "b10bbc72-345e-43fa-a3ab-1d73e01da1f7",
                 "resourcePath": "views\\73bb19ab-f7cc-4e80-82e7-77a35b10ce7f.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "769b4aa2-e625-4343-b342-cd9cc703477f",
+            "Value": {
+                "id": "72def838-b3db-4677-99c7-042df954fcb1",
+                "resourcePath": "sprites\\spr_node\\spr_node.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1255,6 +1271,14 @@
             }
         },
         {
+            "Key": "b9a6c8af-3efe-4b0d-abf1-0e43e87a9716",
+            "Value": {
+                "id": "a76e22c4-9515-401e-80fd-f9ada5e8284f",
+                "resourcePath": "scripts\\scr_shelf_book_col\\scr_shelf_book_col.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "b9b8065e-31f4-46ec-80c9-f01a744212c3",
             "Value": {
                 "id": "3427cd65-27e8-4205-83a2-e8c99cf4cf04",
@@ -1420,6 +1444,14 @@
                 "id": "2c681fb2-37aa-4c9a-a249-0d7813e53c01",
                 "resourcePath": "scripts\\scr_window_register_w_drawer\\scr_window_register_w_drawer.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "d4ae3597-e8a3-44e7-a12c-78e7eb63a551",
+            "Value": {
+                "id": "e5de638b-fe2f-4bc0-aa1f-77c4fb6f92fd",
+                "resourcePath": "objects\\obj_pivot\\obj_pivot.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1607,6 +1639,14 @@
             }
         },
         {
+            "Key": "f109f8fc-03ed-43cb-a400-cc14fe0f8d8a",
+            "Value": {
+                "id": "1af4e7f7-7a20-4392-9bc9-53edfe1a2d5f",
+                "resourcePath": "scripts\\scr_draw_bookcase\\scr_draw_bookcase.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f2c3411e-4a04-418a-abea-af1bd2bd8578",
             "Value": {
                 "id": "080d054d-3813-4e1f-aa6e-db8e523aef70",
@@ -1787,7 +1827,9 @@
         "6a61d63c-4fb4-4d7c-9713-93cea400751b",
         "6c32c0d8-228b-4a46-8858-a6a021186102",
         "0d0f172f-e723-4d6e-a3bd-71d513dd2b22",
-        "8cae8eed-7c56-4278-9a7b-c11d409df341"
+        "f109f8fc-03ed-43cb-a400-cc14fe0f8d8a",
+        "8cae8eed-7c56-4278-9a7b-c11d409df341",
+        "b9a6c8af-3efe-4b0d-abf1-0e43e87a9716"
     ],
     "tutorial": ""
 }

@@ -1,3 +1,3 @@
 /// @description Insert description here
 // You can write your code in this editor
-part_particles_create(global.part_sys,x,y+10,global.pt_dust,2);
+draw_sprite_ext(spr_node,free,x,y,0.6,0.6,0,c_white,1);
