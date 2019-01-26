@@ -12,7 +12,8 @@
         "ec245f35-2a6b-4ecb-81e5-49e036750bfb",
         "9a139ba3-4c39-4000-8360-931c439101a9",
         "490335f8-7114-4dea-9efd-1b918e53ab3d",
-        "a4bcf24c-a865-4165-90cf-8231c51cf3d7"
+        "a4bcf24c-a865-4165-90cf-8231c51cf3d7",
+        "b0e666c9-32b5-4ec9-9cb4-2b6a0e38fafb"
     ],
     "IsDnD": false,
     "layers": [
@@ -21,8 +22,8 @@
             "name": "Cursor",
             "id": "bf531900-208d-4f6a-b89f-69467f56a09e",
             "depth": 0,
-            "grid_x": 32,
-            "grid_y": 32,
+            "grid_x": 16,
+            "grid_y": 16,
             "hierarchyFrozen": false,
             "hierarchyVisible": true,
             "inheritLayerDepth": false,
@@ -100,9 +101,35 @@
         },
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
+            "name": "bck",
+            "id": "de108633-083a-4214-b193-6ff50f2dfb70",
+            "depth": 300,
+            "grid_x": 16,
+            "grid_y": 16,
+            "hierarchyFrozen": false,
+            "hierarchyVisible": true,
+            "inheritLayerDepth": false,
+            "inheritLayerSettings": false,
+            "inheritSubLayers": false,
+            "inheritVisibility": false,
+            "instances": [
+{"name": "inst_24DD964C","id": "b0e666c9-32b5-4ec9-9cb4-2b6a0e38fafb","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_24DD964C","objId": "468e958f-7426-4022-b10f-2ee0f2c98865","properties": null,"rotation": 0,"scaleX": 0.25,"scaleY": 0.25,"mvc": "1.0","x": 80,"y": 768}
+            ],
+            "layers": [
+
+            ],
+            "m_parentID": "00000000-0000-0000-0000-000000000000",
+            "m_serialiseFrozen": false,
+            "modelName": "GMRInstanceLayer",
+            "mvc": "1.0",
+            "userdefined_depth": false,
+            "visible": true
+        },
+        {
+            "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Draw",
             "id": "19210c6e-8985-4c80-9be6-2f5a182bac34",
-            "depth": 300,
+            "depth": 400,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -131,7 +158,7 @@
             "animationFPS": 15,
             "animationSpeedType": "0",
             "colour": { "Value": 4294967295 },
-            "depth": 400,
+            "depth": 500,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -174,12 +201,12 @@
     },
     "roomSettings":     {
         "id": "c3828938-a725-415e-8db6-2b0e5646ac55",
-        "Height": 10000,
+        "Height": 1080,
         "inheritRoomSettings": false,
         "modelName": "GMRoomSettings",
         "persistent": false,
         "mvc": "1.0",
-        "Width": 10000
+        "Width": 1920
     },
     "mvc": "1.0",
     "views": [

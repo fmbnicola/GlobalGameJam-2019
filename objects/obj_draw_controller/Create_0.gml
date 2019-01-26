@@ -13,3 +13,10 @@ for(var i = 0; i < array_length_1d(layers); i++){
 	layers[i] = layer_get_name(layers[i]);
 }
 *7
+*/
+
+
+//PARTICLES SYSTEM HANDLING
+
+global.part_sys = part_system_create_layer("Instances",false);
+scr_part_dust_init();

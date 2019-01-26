@@ -16,6 +16,8 @@ image_index  = 0;
 image_xscale = 0.25;
 image_yscale = 0.25;
 
+on_ladder = false;
+
 //body
 rotation             = 0;
 rot_t                = 0;
@@ -34,6 +36,8 @@ face_x = x;
 face_sprite = 0; //(0 -> normal, 1 -> normal_blinking, 2 -> carrying something, 3 -> hidden);
 face_off = 0;
 face_off_target = 0;
+
+alarm_set(0,room_speed*2); //blink every 2 secs
 
 //arms 
 arm1_x = x;
