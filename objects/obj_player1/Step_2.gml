@@ -34,3 +34,14 @@ face_off = scr_approach(face_off, face_off_target, 2);
 var temp = scr_rotate_point_pivot(head_x,head_y,face_off,0,-rotation);
 face_x = temp[0];
 face_y = temp[1];
+
+//arms 
+var temp = scr_rotate_point_pivot(x,y,-20,-17,-rotation);
+arm1_x = temp[0];
+arm1_y = temp[1];
+var temp = scr_rotate_point_pivot(x,y,+20,-17,-rotation);
+arm2_x = temp[0];
+arm2_y = temp[1];
+
+
+

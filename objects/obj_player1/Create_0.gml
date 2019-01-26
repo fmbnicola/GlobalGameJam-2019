@@ -36,5 +36,18 @@ face_off = 0;
 face_off_target = 0;
 
 //arms 
+arm1_x = x;
+arm1_y = y;
+arm2_x = x;
+arm2_y = y;
 
+arm1_rot_target = -120;
+arm2_rot_target = -120;
+arm1_rot = arm1_rot_target
+arm2_rot = arm2_rot_target;
+
+hand_target_resting = -120;
+hand_target = [0,0];
+
+arm_state = "aiming";
 
