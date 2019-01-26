@@ -6,6 +6,7 @@ enum E_INPUT_SLOT
     RIGHT,
     JUMP, //Add your own enum element to add another input slot!
 	GRAB,
+	INSP,
     __SIZE
 }
 

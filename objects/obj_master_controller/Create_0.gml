@@ -48,6 +48,9 @@ global.camera = instance_create_layer(x+700,y+700,layer,obj_camera);
 //data structure controller
 instance_create_layer(x+400,y,layer,obj_ds_controller);
 
+//level controller
+instance_create_layer(x+500,y,layer,obj_level_controller);
+
 global.pause = false;
 
 global.zoomed_in = false;

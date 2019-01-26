@@ -1,4 +1,10 @@
-chr_id = irandom(global.sort_chars_cnt);
+chr_id = irandom(global.sort_chars_cnt) - 1;
+chr_id = global.dl_to_sort_chars[| chr_id];
+
+image_alpha = 0;
+
+bubble_xscale = 0;
+bubble_yscale = 0;
 
 var know = [0,0,0,0,0];
 
@@ -50,5 +56,3 @@ for(var i = 0; i < 5; i++){
 		}
 	}
 }
-
-scr_console_debug_message(message);

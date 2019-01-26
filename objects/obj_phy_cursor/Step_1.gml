@@ -70,25 +70,25 @@ gui_x = device_mouse_x_to_gui(0);
 gui_y = device_mouse_y_to_gui(0);
 
 if(input_check_pressed(1,E_INPUT_SLOT.GRAB)){
-	var books = ds_list_create();
-	collision_circle_list(x,y,5,obj_book,true,false,books,false);
+	var grabs = ds_list_create();
+	collision_circle_list(x,y,5,obj_grabable,true,false,grabs,false);
 	
 	var y_min = 2000;
-	var b_min = noone;
+	var g_min = noone;
 	
-	var len = ds_list_size(books);
+	var len = ds_list_size(grabs);
 	
 	for(var i = 0; i < len; i++){
-		var bk = books[| 0];
-		ds_list_delete(books,0);
+		var bk = grabs[| 0];
+		ds_list_delete(grabs,0);
 		
 		if(bk.phy_position_y < y_min){
 			y_min = bk.phy_position_y;
-			b_min = bk;
+			g_min = bk;
 		}
 	}
 	
-	with b_min {
+	with g_min {
 		grabbed = true;
 		joint = physics_joint_distance_create(other,id,mouse_x,mouse_y,mouse_x,mouse_y,false);
 	}
