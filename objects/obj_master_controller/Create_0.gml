@@ -36,15 +36,12 @@ instance_create_layer(x+400,y,"Draw",obj_draw_controller);
 
 
 //player
-global.player = instance_create_layer(x+400,y+400,"Player",obj_test);
-global.player2 = instance_create_layer(x+800,y+400,"Player",obj_test_player_2);
+global.player = instance_create_layer(x+400,y+400,"Player",obj_player1);
 
 
 
 //camera
 global.camera = instance_create_layer(x+700,y+700,layer,obj_camera);
-global.camera.follow  = global.player; 
-
 
 //data structure controller
 instance_create_layer(x+400,y,layer,obj_ds_controller);
