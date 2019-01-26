@@ -19,17 +19,17 @@ else{
 	with(obj_draw_parent){
 		if(visible){
 		
-			var layer_off = (other.num_layers - layer)*100;
+			var layer_off = (other.num_layers - layer)*1080;
 			
 			//set id
 			heightgrid[# 0, yy] = id;
 			
 			//set height value
 			if(draw_offset != noone){
-				heightgrid[# 1, yy] = layer_off + draw_offset;
+				heightgrid[# 1, yy] = y + layer_off + draw_offset;
 			}
 			else{
-				heightgrid[# 1, yy] = layer_off;
+				heightgrid[# 1, yy] = y + layer_off;
 			}
 			
 			yy += 1;
@@ -37,7 +37,7 @@ else{
 	}
 	
 	//Sort the instances by Y
-	ds_grid_sort(ds_heightgrid, 1, true);
+	ds_grid_sort(ds_heightgrid, 1, false);
 	
 	#endregion
 	

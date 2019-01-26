@@ -68,5 +68,30 @@ if(selected == noone){
 
 gui_x = device_mouse_x_to_gui(0);
 gui_y = device_mouse_y_to_gui(0);
+
+if(input_check_pressed(1,E_INPUT_SLOT.GRAB)){
+	var books = ds_list_create();
+	collision_circle_list(x,y,5,obj_book,true,false,books,false);
+	
+	var y_min = 2000;
+	var b_min = noone;
+	
+	var len = ds_list_size(books);
+	
+	for(var i = 0; i < len; i++){
+		var bk = books[| 0];
+		ds_list_delete(books,0);
+		
+		if(bk.phy_position_y < y_min){
+			y_min = bk.phy_position_y;
+			b_min = bk;
+		}
+	}
+	
+	with b_min {
+		grabbed = true;
+		joint = physics_joint_distance_create(other,id,mouse_x,mouse_y,mouse_x,mouse_y,false);
+	}
+}
  
 //show_debug_message("H-> " + string(hovered) + "    S-> " + string(selected))
