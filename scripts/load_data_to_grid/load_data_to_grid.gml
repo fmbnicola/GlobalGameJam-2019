@@ -17,9 +17,7 @@ var wd = scr_csv_count_columns(fl_name,";");
 
 var grid = ds_grid_create(wd,hg);
 grid = csv_text_to_grid(fl_name,grid,hg,wd,sx,sy);
-scr_debug_message_ds_grid(grid);
 grid = ds_grid_parse_content(grid);
-scr_debug_message_ds_grid(grid);
 
 return grid;
 }
