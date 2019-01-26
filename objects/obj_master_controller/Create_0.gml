@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+randomize();
+
 draw_script = noone;
 
 physics_world_update_speed(room_speed*4);

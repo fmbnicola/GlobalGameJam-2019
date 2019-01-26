@@ -18,5 +18,6 @@ for(var i = 0; i < array_length_1d(layers); i++){
 
 //PARTICLES SYSTEM HANDLING
 
-global.part_sys = part_system_create_layer("Instances",false);
+global.part_sys = part_system_create_layer("Player",false);
+part_system_automatic_draw(global.part_sys,false);
 scr_part_dust_init();

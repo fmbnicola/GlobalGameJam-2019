@@ -9,6 +9,7 @@ var macros = ds_map_create();
 ds_map_add(macros, vk_backspace, "clear()");
 ds_map_add(macros, ord("Q"),     "quit()");
 ds_map_add(macros, ord("B"),     "create_instance_at_cursor(obj_book)");
+ds_map_add(macros, ord("L"),     "create_instance_at_cursor(obj_small_book)");
 
 
 //print the list of programmed macros

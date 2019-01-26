@@ -67,4 +67,6 @@ else{
 	ds_grid_clear(ds_heightgrid, 0);
 	#endregion
 	
+	part_system_drawit(global.part_sys);
+	
 }
