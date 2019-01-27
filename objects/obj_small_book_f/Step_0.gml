@@ -7,6 +7,9 @@ switch(state){
 	
 		state = "back";
 		
+		scr_play_sounds(snd_put_book_on);
+		
+		
 		//adjust position on bookshelf
 		var pivot = instance_nearest(x,y,obj_pivot);
 		if(pivot.free == false){
@@ -37,6 +40,8 @@ switch(state){
 	break;
 	
 	case "go_to_side":
+	
+		scr_play_sounds(snd_take_bok_off);
 	
 		state = "side";
 		if(my_fix != noone){

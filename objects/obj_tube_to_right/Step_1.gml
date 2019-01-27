@@ -10,6 +10,9 @@ if(bk != noone){
 var bk = instance_place(x,y,obj_small_book_f);
 
 if(bk != noone){
+	scr_play_sounds(snd_bookdrop1,snd_bookdrop2,snd_bookcrop3);
+	scr_play_sounds(snd_dunk1,snd_dunk2,snd_dunk3);
+	obj_player1.arm_state = "resting";
 	instance_destroy(bk);
 }
 
