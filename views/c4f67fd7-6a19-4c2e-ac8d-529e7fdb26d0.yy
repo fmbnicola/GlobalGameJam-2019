@@ -9,7 +9,10 @@
         "6ea3db5f-fab3-4677-9e3d-bba19d74028c",
         "60fbe1e6-f134-4a4f-a8f8-d025df57160f",
         "d4ae3597-e8a3-44e7-a12c-78e7eb63a551",
-        "9f28284b-4cfa-4c36-b42a-ab9027bd60ad"
+        "9f28284b-4cfa-4c36-b42a-ab9027bd60ad",
+        "cff40d54-e938-4692-b182-064d74342e86",
+        "50b80eff-1eda-441a-95bc-8864db68335a",
+        "fb4e0291-5a59-4dfa-9fa0-15aaaad634f8"
     ],
     "filterType": "GMObject",
     "folderName": "leftside",

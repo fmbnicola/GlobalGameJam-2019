@@ -17,11 +17,26 @@ input_handle_gamepad_button( 0, E_INPUT_SLOT.RIGHT,   gamepad_device, gp_padr   
 
 input_handle_gamepad_button( 0, E_INPUT_SLOT.JUMP ,   gamepad_device, gp_face1, gp_face2, gp_face3, gp_face4 );
 
+input_handle_gamepad_button( 0, E_INPUT_SLOT.GRAB ,   gamepad_device, gp_shoulderl, gp_shoulderr, gp_shoulderlb, gp_shoulderrb);
+
+
+
+input_handle_keyboard(       0, E_INPUT_SLOT.UP   ,   ord("W")              );
+input_handle_keyboard(       0, E_INPUT_SLOT.DOWN ,   ord("S")              );
+input_handle_keyboard(       0, E_INPUT_SLOT.LEFT ,   ord("A")              );
+input_handle_keyboard(       0, E_INPUT_SLOT.RIGHT,   ord("D")              );
+
+input_handle_keyboard(       0, E_INPUT_SLOT.JUMP ,   vk_space,             );
+
+input_handle_keyboard(       0, E_INPUT_SLOT.GRAB ,   ord("K"),             );
 
 //player 2
-input_handle_keyboard(       1, E_INPUT_SLOT.UP   ,   vk_up   , ord("W")              );
-input_handle_keyboard(       1, E_INPUT_SLOT.DOWN ,   vk_down , ord("S")              );
-input_handle_keyboard(       1, E_INPUT_SLOT.LEFT ,   vk_left , ord("A")              );
-input_handle_keyboard(       1, E_INPUT_SLOT.RIGHT,   vk_right, ord("D")              );
-input_handle_keyboard(       1, E_INPUT_SLOT.JUMP ,   vk_space, vk_enter              );
-input_handle_mouse(          1, E_INPUT_SLOT.JUMP ,   mb_left                         );
+input_handle_keyboard(       1, E_INPUT_SLOT.UP   ,   vk_up                 );
+input_handle_keyboard(       1, E_INPUT_SLOT.DOWN ,   vk_down               );
+input_handle_keyboard(       1, E_INPUT_SLOT.LEFT ,   vk_left               );
+input_handle_keyboard(       1, E_INPUT_SLOT.RIGHT,   vk_right              );
+
+input_handle_keyboard(       1, E_INPUT_SLOT.JUMP ,   vk_numpad0            );
+
+input_handle_mouse(          1, E_INPUT_SLOT.GRAB ,   mb_left,   );
+input_handle_mouse(          1, E_INPUT_SLOT.INSP ,   mb_right,  );

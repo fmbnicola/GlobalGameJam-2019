@@ -40,6 +40,9 @@ command_help[12]="instance_untrack_var(instance_id,variable_name)-> Stops the tr
 command_list[13]="debug_overlay";
 command_help[13]="debug_overlay() -> toggles the display of the debug overlay";
 
+command_list[14]="score";
+command_help[14]="score() -> shows game score";
+
 number_of_commands = array_length_1d(command_list);
 
 

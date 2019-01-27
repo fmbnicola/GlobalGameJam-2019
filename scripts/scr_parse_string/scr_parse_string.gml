@@ -7,7 +7,7 @@ if(str == "" || str == "#"){ return 0;}
 
 //show_debug_message("Begin parsing...");
 
-var res;
+var res = str;
 var i = 0;
 var c = string_char_at(str,i);
 

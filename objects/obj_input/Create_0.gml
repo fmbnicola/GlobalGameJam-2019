@@ -25,4 +25,4 @@ input_set_max_players( 2 );
 input_clear();
 
 //set the starting input profile 
-input_profile_script = scr_input_profile_2player_keyb;
+input_profile_script = scr_input_profile_2player_keyb_controller;

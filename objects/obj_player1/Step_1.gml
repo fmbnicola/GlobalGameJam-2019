@@ -8,7 +8,17 @@ switch(arm_state){
 		arm2_rot = scr_approach(arm2_rot%360,arm2_rot_target%360,10);
 		
 		//choose a book to select
+		var wand_dist = 100000000000;
+		if(instance_exists(obj_mini_wand)){
+			var wand = instance_nearest(x,y,obj_mini_wand);
+			var wand_dist = distance_to_object(wand);
+		}
+		
 		var closest_book = instance_nearest(x,y,obj_small_book);
+		
+		if(distance_to_object(closest_book) > wand_dist){
+			closest_book = instance_nearest(x,y,obj_mini_wand);
+		}
 		
 		if(closest_book != noone and distance_to_object(closest_book) < 40){
 			
@@ -21,7 +31,7 @@ switch(arm_state){
 			
 		}
 		else{
-			if(book_selected != noone){
+			if(book_selected != noone and instance_exists(book_selected)){
 				book_selected.highlight = false;
 			}
 			book_selected = noone;
@@ -31,8 +41,11 @@ switch(arm_state){
 		if(input_check_pressed(0,E_INPUT_SLOT.GRAB) and book_selected != noone){
 			book = book_selected;
 			
-			if(book.state == "back"){
-				book.state = "go_to_side";
+			if(book.object_index != obj_mini_wand){
+				
+				if(book.state == "back"){
+					book.state = "go_to_side";
+				}
 			}
 			
 			book_joint[0] = physics_joint_distance_create(id,book,x,y,book.x,book.y,false);
@@ -43,6 +56,12 @@ switch(arm_state){
 	break;
 
 	case "pickupbook":
+	
+		if(!instance_exists(book)){
+			arm_state = "resting";
+			exit;
+		}
+	
 		hand_target[0] = book.x;
 		hand_target[1] = book.y;
 		arm1_rot_target = point_direction(arm1_x,arm1_y,hand_target[0],hand_target[1]);
@@ -54,7 +73,11 @@ switch(arm_state){
 		
 		//if let go of grab on ledge, store book
 		if(input_check_released(0,E_INPUT_SLOT.GRAB) and book != noone and place_meeting(book.x,book.y,obj_bookcase) and pivot.free = true){
-			book.state = "go_to_back";
+			
+			if(book.object_index != obj_mini_wand){
+				book.state = "go_to_back";
+			}
+			
 			arm_state = "resting";
 			physics_joint_delete(book_joint[0]);
 			physics_joint_delete(book_joint[1]);

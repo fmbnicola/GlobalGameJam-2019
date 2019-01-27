@@ -13,6 +13,16 @@
             "enumb": 0,
             "eventtype": 4,
             "m_owner": "498cc21d-412f-4d5b-9d49-62a9d4b92633"
+        },
+        {
+            "id": "dde9999f-a044-4630-85ff-b4a6144da3b5",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "498cc21d-412f-4d5b-9d49-62a9d4b92633"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -31,37 +41,37 @@
     "physicsShape": 1,
     "physicsShapePoints": [
         {
-            "id": "984040fe-a6a6-4cea-8957-78d33f3fc8fd",
+            "id": "a3006381-fcb5-45e4-a9a0-e70bdc5a2c0d",
             "modelName": "GMPoint",
             "mvc": "1.0",
             "x": 0,
             "y": 0
         },
         {
-            "id": "affcde0e-719e-47b9-b408-c73edf190a04",
+            "id": "b0f1027e-0e2d-4efc-ac63-137600b93e20",
             "modelName": "GMPoint",
             "mvc": "1.0",
-            "x": 128,
+            "x": 65,
             "y": 0
         },
         {
-            "id": "6f237d55-d5b9-40e9-878a-0c3e32c53296",
+            "id": "1900ca7a-5540-4060-996a-f54b1d3725da",
             "modelName": "GMPoint",
             "mvc": "1.0",
-            "x": 128,
-            "y": 128
+            "x": 65,
+            "y": 65
         },
         {
-            "id": "ed7252f9-e0e6-40f1-be3b-29b68c7b7f0e",
+            "id": "b9f3158b-a630-4d9a-81b9-2572d0525f73",
             "modelName": "GMPoint",
             "mvc": "1.0",
             "x": 0,
-            "y": 128
+            "y": 65
         }
     ],
     "physicsStartAwake": true,
     "properties": null,
     "solid": true,
-    "spriteId": "ec4543c8-dc22-4d56-9243-58825bc1892c",
+    "spriteId": "2066abed-e1a4-4534-b339-16b575ac01e5",
     "visible": true
 }

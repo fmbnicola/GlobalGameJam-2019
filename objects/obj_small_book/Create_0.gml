@@ -4,10 +4,15 @@ event_inherited();
 draw_script = scr_draw_small_book;
 state = "side"; //(can be either back or side )
 
+hp = 3;
+
+info = -1;
+alarm[0] = 5;
+
 highlight = false;
 
 color   =  0;
-book_id = -1;
+book_id = irandom(7);
 
 //create physics fixture
 book_fix = physics_fixture_create();

@@ -1,0 +1,1 @@
+var inst = instance_create_layer(1152,-264,"Instances",obj_wand);

@@ -71,7 +71,7 @@ gui_y = device_mouse_y_to_gui(0);
 
 if(input_check_pressed(1,E_INPUT_SLOT.GRAB)){
 	var grabs = ds_list_create();
-	collision_circle_list(x,y,5,obj_grabable,true,false,grabs,false);
+	collision_circle_list(x,y,50,obj_grabable,true,false,grabs,false);
 	
 	var y_min = 2000;
 	var g_min = noone;

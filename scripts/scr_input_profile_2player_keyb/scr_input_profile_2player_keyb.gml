@@ -8,7 +8,6 @@ input_handle_keyboard(       0, E_INPUT_SLOT.RIGHT,   ord("D")              );
 input_handle_keyboard(       0, E_INPUT_SLOT.JUMP ,   vk_space,             );
 
 input_handle_keyboard(       0, E_INPUT_SLOT.GRAB ,   ord("F"),             );
-input_handle_keyboard(       0, E_INPUT_SLOT.INSP ,   ord("G"),             );
 
 //player 2
 input_handle_keyboard(       1, E_INPUT_SLOT.UP   ,   vk_up                 );

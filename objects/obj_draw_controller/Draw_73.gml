@@ -1,4 +1,4 @@
-draw_self();
+//draw_self();
 
 if(ds_exists(ds_heightgrid, ds_type_grid) == false){
 	ds_height_grid = ds_grid_create(2,1);

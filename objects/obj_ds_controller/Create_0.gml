@@ -8,8 +8,9 @@ global.dl_to_sort_chars = ds_list_create();
 global.sort_chars_cnt   = 0;
 
 for(var i = 0; i < global.char_cnt; i++){
-	if(round(random(1))){
+	if(irandom(1)){
 		ds_list_add(global.dl_to_sort_chars,i);
-		global.sort_chars_cnt += 1;
 	}
 }
+
+global.sort_chars_cnt = ds_list_size(global.dl_to_sort_chars);

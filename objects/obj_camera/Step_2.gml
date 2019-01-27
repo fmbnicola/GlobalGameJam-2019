@@ -21,7 +21,7 @@ y += (y_to - y)/tracking_factor;
 
 
 //take care of zooming
-zoom_level = clamp(zoom_level + ((mouse_wheel_down() - mouse_wheel_up())* 0.4), zoom_min, zoom_max)
+//zoom_level = clamp(zoom_level + ((mouse_wheel_down() - mouse_wheel_up())* 0.4), zoom_min, zoom_max)
 
 if(zoom_level <= 1.3){
 	global.zoomed_in = true;

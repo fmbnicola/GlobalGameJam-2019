@@ -46,6 +46,10 @@ switch(command){
 		console_text = "";
 	break;
 	
+	case "score":
+		console_text += "Score: " + string(score);
+	break;
+	
 	case "debug_overlay":
 		db_overlay = !db_overlay;
 		show_debug_overlay(db_overlay);

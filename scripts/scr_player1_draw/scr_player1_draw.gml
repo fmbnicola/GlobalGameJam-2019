@@ -1,4 +1,4 @@
-draw_text(x+30,y,arm_state);
+//draw_text(x+30,y,arm_state);
 
 if(using_ladder){  //draws player facing backwards
 	
@@ -48,5 +48,3 @@ else{ //draws player facing forwards
 	draw_sprite_ext(spr_player1_arm,0,arm2_x,arm2_y,-image_xscale,image_yscale*arm1_mod,rotation-arm2_rot,c_white,1);
 
 }
-
-//physics_draw_debug();

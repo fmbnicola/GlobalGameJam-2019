@@ -11,7 +11,8 @@
         "8ca27dd8-7a66-4040-b765-092bc4f9a4ae",
         "04ca72d5-415b-4ccc-80a4-20f6b6aa83be",
         "c7a1c25e-8444-4c35-837c-9fedf8202580",
-        "31883a71-648f-44ce-ae49-ec348c459201"
+        "31883a71-648f-44ce-ae49-ec348c459201",
+        "2b7be9c8-5301-4cfa-af76-8f63f39f3951"
     ],
     "filterType": "GMObject",
     "folderName": "controllers",

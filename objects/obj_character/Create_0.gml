@@ -1,5 +1,10 @@
-chr_id = irandom(global.sort_chars_cnt) - 1;
+chr_id = irandom_range(0,global.sort_chars_cnt-1);
 chr_id = global.dl_to_sort_chars[| chr_id];
+ds_list_delete(global.dl_to_sort_chars,chr_id);
+global.sort_chars_cnt -= 1;
+
+image_xscale = 1.5;
+image_yscale = 1.5;
 
 image_alpha = 0;
 
@@ -56,3 +61,4 @@ for(var i = 0; i < 5; i++){
 		}
 	}
 }
+
