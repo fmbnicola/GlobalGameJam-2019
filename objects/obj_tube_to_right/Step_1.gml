@@ -7,6 +7,12 @@ if(bk != noone){
 	instance_destroy(bk);
 }
 
+var bk = instance_place(x,y,obj_small_book_f);
+
+if(bk != noone){
+	instance_destroy(bk);
+}
+
 var wn = instance_place(x,y,obj_mini_wand);
 
 //obj_player1.arm_state = "resting";

@@ -10,7 +10,11 @@ if(ds_exists(gr,ds_type_grid)){
 	for(var i = 0; i < hg; i++){
 		text = "[ ";
 		for(var j = 0; j < wd; j++){
-			text += (string(gr[# j, i]) + " ");
+			text += (string(gr[# j, i]));
+			
+			if(j != wd - 1){
+				text += " | ";
+			}
 		}
 		show_debug_message(text + "]");
 	}

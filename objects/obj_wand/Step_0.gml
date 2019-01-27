@@ -6,84 +6,89 @@ if(y > 1080){
 head.x = phy_position_x;
 head.y = phy_position_y;
 
-switch state {
-	case 0:
-		var coll = noone;
-		
-		with head {
-			coll = instance_place(x,y,obj_character);
-		}
-		
-		if(char != noone){
-			if(char == coll){
-				counter += 1;
-			}			
-		}else if(coll != noone){
-			counter += 1;
-			char = coll;
-		}else {
-			counter = 0;
-			char = noone;
-		}
-		
-		if(counter > 30){
-			state = 1;
-			counter = 0;
-		}
-	break;
+
+if(grabbed and alarm[0] == -1){
+	var inspect = false;
 	
-	case 1:
-		var coll = noone;
-		
-		with head {
-			coll = instance_place(x,y,obj_book);
-		}
-		
-		if(book != noone){
-			if(book == coll){
-				counter += 1;
-			}else {
-				counter = 1;
-				book = coll;
+	if(input_check(1,E_INPUT_SLOT.INSP)){
+		inspect = true;
+	}
+
+	switch state {
+		case 0:
+			if(inspect and instance_exists(obj_character)){
+				state = 1;
 			}
-		}else if(coll != noone){
-			counter += 1;
-			book = coll;
-		}else {
-			counter = 0;
-			book = noone;
-		}
-		
-		if(counter > 30){
-			state = 2;
-			counter = 0;
-		}
-	break;
+		break;
 	
-	case 2:
-		var cid = char.chr_id;
+		case 1:
+			if(inspect){
+				var coll = noone;
 		
-		var bid = global.dg_chars[# 5, cid];
+				with head {
+					coll = instance_place(x,y,obj_book);
+				}
 		
-		if(bid == book.book_id){
-			score += 1000;
-		}else {
-			score -= 500;
+				if(book != noone){
+					if(book == coll){
+						counter += 1;
+					}else {
+						counter = 1;
+						book = coll;
+					}
+				}else if(coll != noone){
+					counter += 1;
+					book = coll;
+				}else {
+					counter = 0;
+					book = noone;
+				}
+		
+				if(counter > room_speed * 1.5){
+					state   = 2;
+					counter = 0;
+				}
+			}else {
+				char    = noone;
+				book    = noone;
+				counter = 0;
+				state   = 0;
+			}
+		break;
+	
+		case 2:
+			char = obj_character.id;
 			
-			book.hp -= 1;
-		}
+			var cid = char.chr_id;
 		
-		instance_destroy(char);
-		char = noone;
-		obj_level_controller.alarm[0] = 15;
+			var bid = global.dg_chars[# 5, cid];
 		
-		if(book.hp == 0){
-			score -= 500;
-			instance_destroy(book);
-		}
+			if(bid == book.book_id){
+				score += 1000;
+			}else {
+				score -= 500;
+			
+				book.hp -= 1;
+			}
 		
-		book = noone;
+			instance_destroy(char);
+			char = noone;
+			obj_level_controller.alarm[0] = 15;
 		
-		state = 0;
-	break;
+			if(book.hp == 0){
+				score -= 500;
+				instance_destroy(book);
+			}
+		
+			book = noone;
+		
+			alarm[0] = 2 * room_speed;
+			state = 0;
+		break;
+	}
+}else {
+	char    = noone;
+	book    = noone;
+	counter = 0;
+	state   = 0;
 }

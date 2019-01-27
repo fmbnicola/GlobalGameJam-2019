@@ -1,6 +1,7 @@
-chr_id = irandom_range(0,global.sort_chars_cnt-1);
+chr_id = irandom(global.sort_chars_cnt-1);
 chr_id = global.dl_to_sort_chars[| chr_id];
 ds_list_delete(global.dl_to_sort_chars,chr_id);
+scr_debug_message_ds_list(global.dl_to_sort_chars);
 global.sort_chars_cnt -= 1;
 
 image_xscale = 1.5;
@@ -13,26 +14,33 @@ bubble_yscale = 0;
 
 var know = [0,0,0,0,0];
 
-var info = ["?","?","?","?","?"];
+var info = ["x","x","x","x","x"];
 
+var i   = 0;
 var cnt = 0;
 
-for(var i = 0; i < 5; i++){
-	know[i] = irandom(1);
+while(cnt < 3 or i < 5){
+	var ind = i mod 5;
 	
-	if(know[i] == 1){
-		info[i] = global.dg_chars[# i, chr_id];
+	if(not know[ind]){
+		know[ind] = irandom(1);
+	
+		if(know[ind]){
+			info[ind] = global.dg_chars[# ind, chr_id];
 		
-		if(info[i] != ""){
-			cnt += 1;
-		}else {
-			know[i] = 0;
-		}
+			if(info[ind] != "x"){
+				cnt += 1;
+			}else {
+				know[ind] = 0;
+			}
 		
-		if(cnt == 3){
-			break;
+			if(cnt == 3){
+				break;
+			}
 		}
 	}
+	
+	i += 1;
 }
 
 message = "";

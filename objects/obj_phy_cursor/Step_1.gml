@@ -93,5 +93,3 @@ if(input_check_pressed(1,E_INPUT_SLOT.GRAB)){
 		joint = physics_joint_distance_create(other,id,mouse_x,mouse_y,mouse_x,mouse_y,false);
 	}
 }
- 
-//show_debug_message("H-> " + string(hovered) + "    S-> " + string(selected))

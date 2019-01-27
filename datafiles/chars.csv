@@ -1,30 +1,30 @@
 "Alice";14;"My house has a beautiful garden, I wish dad could play with me more...";"I like to play in the garden.";"aristocrat";0
-"Mad Hatter";"";"I'm from a land of wonder and possibility.";"My tea parties have no parallel.";"commoner";0
-"Red Queen";"";"I must return to my palace at once!";"Did you see a flamingo? I lost my cricket bat...";"nobel";0
+"Mad Hatter";"x";"I'm from a land of wonder and possibility.";"My tea parties have no parallel.";"commoner";0
+"Red Queen";"x";"I must return to my palace at once!";"Did you see a flamingo? I lost my cricket bat...";"nobel";0
 "Ariel";17;"My home is the land and sea.";"I have a collection of things-in-a-box.";"nobel";1
-"Ursula";"";"I reside in an undersea grotto with my minions.";"I help poor unfortunate souls.";"witch";1
+"Ursula";"x";"I reside in an undersea grotto with my minions.";"I help poor unfortunate souls.";"witch";1
 "Mowgli";12;"I am from the jungle.";"During the days I play with my friends and try to avoid danger.";"orphan";2
-"Balu";"";"The jungle is my home.";"Living life and caring for my little friend fills my day.";"bear";2
+"Balu";"x";"The jungle is my home.";"Living life and caring for my little friend fills my day.";"bear";2
 "Dr. Frankenstein";23;"I have a castle on the mountain side.";"My days are occupied by experiments and research.";"doctor";3
-"Monster";"";"Hurr....";"Gaaarr...";"monster";3
+"Monster";"x";"Hurr....";"Gaaarr...";"monster";3
 "Sherlock Holmes";40;"I live in the exciting city of London.";"Solving mysteries is my passion and calling.";"detective";4
 "Watson";36;"Londoner, sir, and proud too.";"I am happy helping my partner how I can.";"detective";4
 "Khaleesi";22;"Home is where my people are and need me.";"Leading is what I've been born to do.";"nobel";5
 "John";24;"The north is my home.";"I must fight for what is right and for the safety of all.";"warrior";5
 "Carlos";25;"Though I travel, Lisbon is my home.";"My drive is to help and cure the ill.";"doctor";6
 "Damaso";24;"I am home with the high society.";"Enjoying life is the most important.";"rich";6
-"Wade";17;"My home is in the stacks.";"The world as it is... Elysium is better.";"student";7
+"Wade";17;"My home is in the stacks.";"The world as it is... The Oasis is better.";"student";7
 "Artemis";18;"My life is spent in hiding...";"I have to work to change the this world and its greed.";"activist";7
-"Genie";10000;"I live in a gold object";"Three wishes, to be exact. That's it. Three. Uno, dos, tres. No substitutions, exchanges or refunds.";"wish-granter";8
-"Aladin";18;"I live in the poor side of the city.";"Genie, I wish for your freedom.";"homeless";8
+"Genie";10000;"I live in a gold object.";"Three wishes, to be exact. That's it. Three. Uno, dos, tres. No substitutions, exchanges or refunds.";"wish-granter";8
+"Alladin";18;"I live in the poor side of the city.";"Genie, I wish for your freedom.";"homeless";8
 "Jasmin";17;"I used to live in the palace.";"I'm not free to make my own choices.";"princess";8
 "Ella";17;"My home used to be an happy place. But since my dad is gone, I'm nothing but a slave here.";"But, you see, I have the other slipper.";"princess";9
 "Godmother";69;"I live in the fairy kingdom.";"Yes, my child, but like all dreams, well, I'm afraid this can't last forever. You'll have only 'til midnight, and then...";"fairy";9
 "Stepmother";50;"I made where I live a prison to my stepdaughter.";"...and the windows upstairs and down- Wash them! Oh yes, and the tapestries and the draperies...";"princess";9
 "Hansel";9;"I live in a small village in the woods.";"I used to love candy! After what happend, I got nightmares.";"child";10
-"Witch";90;"My house is literally a trap.";"Come over here children, you can eat all you want.";"vilain";10
-"Queen";40;"I live in the palace.";"Magic mirror on the wall, who is the fairest one of all?.";"nobel";11
-"Mirror";"";"My past century was on this wall, serving the queen.";"Famed is thy beauty, Majesty. But hold, a lovely maid I see. Rags cannot hide her gentle grace. Alas, she is more fair than thee.";"artifact";11
+"Witch";90;"My house is literally a trap.";"Come over here children, you can eat all you want.";"vilain";10
+"Queen";40;"I live in the palace.";"Magic mirror on the wall, who is the fairest one of all?.";"nobel";11
+"Mirror";"x";"My past century was on this wall, serving the queen.";"Famed is thy beauty, Majesty. But hold, a lovely maid I see. Rags cannot hide her gentle grace. Alas, she is more fair than thee.";"artifact";11
 "Bashful";30;"I live in a cottage, idiot!";"I spend all day mining, I'm so bored.";"dwarf";11
-"Giant";100;"I live in a castle in the sky";"I'll grind your bones to make my bread!";"giant";12
+"Giant";100;"I live in a castle in the sky.";"I'll grind your bones to make my bread!";"giant";12
 "Jack";17;"My home is... I mean it was!";"Mother, look at the beanstalk!";"child";12

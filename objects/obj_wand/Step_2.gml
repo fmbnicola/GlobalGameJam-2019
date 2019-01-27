@@ -1,7 +1,16 @@
 // Inherit the parent event
 event_inherited();
 
-if(p_state != state){
-	part_particles_create(global.part_sys, x, y - 16, global.pt_dust, 10);
-	p_state = state;
+if(state == 1){
+	if(counter == 0){
+		part_particles_create(global.part_sys, x, y + 40, global.pt_star, 2);
+	}else {
+		if(counter mod (room_speed / 2) == 0){
+			part_particles_create(global.part_sys, x, y + 40, global.pt_star, 10);
+		}
+		
+		if(counter == 0){
+			part_particles_create(global.part_sys, x, y + 40, global.pt_star, 50);
+		}
+	}
 }

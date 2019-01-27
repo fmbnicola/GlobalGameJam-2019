@@ -21,3 +21,5 @@ for(var i = 0; i < array_length_1d(layers); i++){
 global.part_sys = part_system_create_layer("Player",false);
 part_system_automatic_draw(global.part_sys,false);
 scr_part_dust_init();
+scr_part_big_dust_init();
+scr_part_stars_init();

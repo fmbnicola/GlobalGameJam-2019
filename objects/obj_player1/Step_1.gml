@@ -10,14 +10,25 @@ switch(arm_state){
 		//choose a book to select
 		var wand_dist = 100000000000;
 		if(instance_exists(obj_mini_wand)){
-			var wand = instance_nearest(x,y,obj_mini_wand);
-			var wand_dist = distance_to_object(wand);
+			wand_dist = distance_to_object(obj_mini_wand);
 		}
 		
-		var closest_book = instance_nearest(x,y,obj_small_book);
+		var closest_book   = instance_nearest(x,y,obj_small_book);
+		var book_dist      = distance_to_object(closest_book);
 		
-		if(distance_to_object(closest_book) > wand_dist){
-			closest_book = instance_nearest(x,y,obj_mini_wand);
+		var closest_book_f = instance_nearest(x,y,obj_small_book_f);
+		var book_f_dist    = distance_to_object(closest_book_f);
+		
+		if(book_dist > wand_dist){
+			if(book_f_dist > wand_dist){
+				closest_book = obj_mini_wand;
+			}else {
+				closest_book = closest_book_f;
+			}
+		}else {
+			if(book_dist > book_f_dist){
+				closest_book = closest_book_f;
+			}
 		}
 		
 		if(closest_book != noone and distance_to_object(closest_book) < 40){
@@ -42,7 +53,6 @@ switch(arm_state){
 			book = book_selected;
 			
 			if(book.object_index != obj_mini_wand){
-				
 				if(book.state == "back"){
 					book.state = "go_to_side";
 				}

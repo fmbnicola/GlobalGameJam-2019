@@ -1,5 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
 event_inherited();
 draw_script = scr_draw_small_book;
 state = "side"; //(can be either back or side )
@@ -12,7 +10,7 @@ alarm[0] = 5;
 highlight = false;
 
 color   =  0;
-book_id = irandom(7);
+book_id = -1;
 
 //create physics fixture
 book_fix = physics_fixture_create();
