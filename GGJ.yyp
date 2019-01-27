@@ -1263,6 +1263,14 @@
             }
         },
         {
+            "Key": "92004b06-7817-403f-94c8-718b966cd963",
+            "Value": {
+                "id": "aea71982-bf34-442c-9988-a3b234f62e5a",
+                "resourcePath": "sprites\\spr_how_to_play\\spr_how_to_play.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "94033310-e3cc-4b8f-82ce-c7d89f556a4a",
             "Value": {
                 "id": "afc1cab0-ab9d-4fed-86dd-fcb0e63f0d03",
@@ -1460,6 +1468,14 @@
                 "id": "57ef9055-8289-4e20-bd6b-0bbd66db79a3",
                 "resourcePath": "objects\\obj_wand\\obj_wand.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "a5d428c2-7ae5-4d31-91f9-47aae4a69545",
+            "Value": {
+                "id": "a9f6c7fe-a082-4b92-9481-b809f26525ca",
+                "resourcePath": "sprites\\spr_credits\\spr_credits.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

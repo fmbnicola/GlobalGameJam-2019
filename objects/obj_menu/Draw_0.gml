@@ -24,3 +24,9 @@ repeat(buttons){
 	i++;
 }
 	
+	
+if( gamepad_button_check(0,gp_face1) or keyboard_check(vk_space) or keyboard_check(vk_enter)){
+	if(menu_index == 1){
+		draw_sprite(spr_how_to_play,0,0,0)
+	}
+}
