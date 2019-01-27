@@ -375,14 +375,6 @@
             }
         },
         {
-            "Key": "2ddbb936-4e39-4c37-8bc5-f171bd06452e",
-            "Value": {
-                "id": "d55819b5-a6ab-4a87-a40b-f99f4053ec20",
-                "resourcePath": "sounds\\snd_flipbook1\\snd_flipbook1.yy",
-                "resourceType": "GMSound"
-            }
-        },
-        {
             "Key": "2f874e11-136f-4445-8bbb-464996b379fe",
             "Value": {
                 "id": "8771dc4c-61ce-4f62-89e4-060c24dcc3ea",
@@ -1911,14 +1903,6 @@
             }
         },
         {
-            "Key": "d692ce40-2160-48dd-a554-e761fbd1ecfb",
-            "Value": {
-                "id": "575c37a7-217b-4484-9211-ff5d5f4a1cec",
-                "resourcePath": "sounds\\snd_flipbook3\\snd_flipbook3.yy",
-                "resourceType": "GMSound"
-            }
-        },
-        {
             "Key": "d71c632a-3deb-41fc-ae93-8f33558db6a8",
             "Value": {
                 "id": "bc94d910-6fbd-4702-8952-d00e64899077",
@@ -2151,14 +2135,6 @@
             }
         },
         {
-            "Key": "f535738f-6a3a-4da0-a9bc-618e9b5fe5f4",
-            "Value": {
-                "id": "8643e532-20a1-4cf2-ade5-21b8ee8a46f8",
-                "resourcePath": "sounds\\snd_flipbook2\\snd_flipbook2.yy",
-                "resourceType": "GMSound"
-            }
-        },
-        {
             "Key": "f56d00a2-8d87-499e-b63f-bf73c90d3739",
             "Value": {
                 "id": "23d62372-559a-4638-be7a-36d3880d0c8c",
@@ -2343,8 +2319,8 @@
         "f109f8fc-03ed-43cb-a400-cc14fe0f8d8a",
         "9f0ed428-58f2-40d8-8cd8-69196d582f79",
         "8cae8eed-7c56-4278-9a7b-c11d409df341",
-        "6254a31f-9abd-4bc7-9bb7-6b07cc07939b",
         "ea09f06e-1120-4290-a214-3c418616ad89",
+        "6254a31f-9abd-4bc7-9bb7-6b07cc07939b",
         "b9a6c8af-3efe-4b0d-abf1-0e43e87a9716",
         "4b260b9f-edc1-469b-8971-f33aeec9f90f"
     ],
