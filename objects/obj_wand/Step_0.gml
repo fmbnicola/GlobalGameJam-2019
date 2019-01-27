@@ -65,9 +65,10 @@ if(grabbed and alarm[0] == -1){
 		
 			if(bid == book.book_id){
 				score += 1000;
+				scr_play_sounds(snd_good);
 			}else {
 				score -= 500;
-			
+				scr_play_sounds(snd_bad);
 				book.hp -= 1;
 			}
 		
@@ -77,6 +78,7 @@ if(grabbed and alarm[0] == -1){
 		
 			if(book.hp == 0){
 				score -= 500;
+				scr_play_sounds(snd_bad);
 				instance_destroy(book);
 			}
 		

@@ -5,4 +5,4 @@ if(highlight == true){
 
 draw_sprite_ext(spr_mn_wand,0,x,y,image_xscale,image_yscale,-phy_rotation,c_white,1);
 
-draw_text(x+20,y,phy_speed_y)
+//draw_text(x+20,y,phy_speed_y)
