@@ -67,3 +67,4 @@ hand_target = [0,0];
 
 arm_state = "resting";
 
+can_step = true;

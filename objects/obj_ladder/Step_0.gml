@@ -9,6 +9,7 @@ if(place_meeting(x,y,obj_player1) and abs(obj_player1.x - x) < 30){
 		vspd = lengthdir_y(len,dir);
 		phy_position_y += vspd;
 		on_ladder = true;
+		
 	}
 }
 else{

@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+audio_play_sound(music,0,true);
+
 randomize();
 
 draw_script = noone;
@@ -18,7 +20,7 @@ global.cursor.visible = true;
 
 
 //input
-instance_create_layer(x+100,y,layer,obj_input);
+//instance_create_layer(x+100,y,layer,obj_input);
 
 
 

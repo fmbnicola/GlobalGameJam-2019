@@ -32,6 +32,9 @@ if(input_check(0,E_INPUT_SLOT.JUMP) and can_jump = true and place_meeting(x,y,ob
 		alarm_set(2,room_speed*jump_hold_time);
 	}
 	physics_apply_impulse(phy_position_x,phy_position_y,lengthdir_x(6000,90),lengthdir_y(6000,90))
+	
+	scr_play_sounds(snd_jump);
+	
 }
 //prolonged jump
 else if(jump_start ==false and input_check(0,E_INPUT_SLOT.JUMP)){

@@ -14,7 +14,12 @@ repeat(buttons){
 	
 	draw_set_color(c_black);
 	
-	if(menu_index == i) draw_set_color(c_red);
+	
+	if(menu_index == i){
+		draw_set_color(make_color_hsv(0,0,200));
+		draw_rectangle(xx - button_w/2, yy, xx + button_w/2, yy + button_h, false);
+		draw_set_color(c_white);
+	}
 	draw_text(xx, yy + button_h/2, button[i]);
 	i++;
 }

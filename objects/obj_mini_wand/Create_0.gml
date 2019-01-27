@@ -6,3 +6,4 @@ event_inherited();
 draw_script = scr_draw_mini_wand;
 highlight = false;
 
+can_play_again = true;
