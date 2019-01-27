@@ -7,6 +7,9 @@ var gwd = display_get_gui_width();
 var x1 = gwd/2 - 32 - wd/2;
 var x2 = x1 + 64 + wd;
 
+x1 -= 50;
+x2 -= 50;
+
 var y1 = 0;
 var y2 = hg + 64;
 
