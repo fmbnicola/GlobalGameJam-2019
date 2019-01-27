@@ -1465,7 +1465,7 @@
         {
             "Key": "a5d1f343-64cb-432c-9961-e97af03c0a90",
             "Value": {
-                "id": "e23af7f9-6d07-451d-beec-51c7c90b032d",
+                "id": "57ef9055-8289-4e20-bd6b-0bbd66db79a3",
                 "resourcePath": "objects\\obj_wand\\obj_wand.yy",
                 "resourceType": "GMObject"
             }
@@ -2063,6 +2063,14 @@
             }
         },
         {
+            "Key": "ea09f06e-1120-4290-a214-3c418616ad89",
+            "Value": {
+                "id": "6bdf28d7-807c-4af3-a987-96962978468a",
+                "resourcePath": "scripts\\scr_part_big_dust_init\\scr_part_big_dust_init.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "eb4a2f7a-9367-4e4b-8d50-8fac41c580bc",
             "Value": {
                 "id": "7f6c8c4f-ac8f-48fc-b631-5efac9481dfe",
@@ -2335,7 +2343,10 @@
         "f109f8fc-03ed-43cb-a400-cc14fe0f8d8a",
         "9f0ed428-58f2-40d8-8cd8-69196d582f79",
         "8cae8eed-7c56-4278-9a7b-c11d409df341",
-        "b9a6c8af-3efe-4b0d-abf1-0e43e87a9716"
+        "6254a31f-9abd-4bc7-9bb7-6b07cc07939b",
+        "ea09f06e-1120-4290-a214-3c418616ad89",
+        "b9a6c8af-3efe-4b0d-abf1-0e43e87a9716",
+        "4b260b9f-edc1-469b-8971-f33aeec9f90f"
     ],
     "tutorial": ""
 }

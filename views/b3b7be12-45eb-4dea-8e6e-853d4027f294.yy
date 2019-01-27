@@ -9,8 +9,8 @@
         "20763cfe-60c8-4387-a949-ed91c6789bcd",
         "fcdd978f-641a-4fc1-b03b-f62a8c31accd",
         "d399fb3f-ea56-4257-8d12-3a1abf017ed9",
-        "a5d1f343-64cb-432c-9961-e97af03c0a90",
-        "086c0afb-b488-4720-a41b-5160d43b781d"
+        "086c0afb-b488-4720-a41b-5160d43b781d",
+        "a5d1f343-64cb-432c-9961-e97af03c0a90"
     ],
     "filterType": "GMObject",
     "folderName": "rightside",
